@@ -5,7 +5,7 @@ Grommet v2 theme to mimic grommet v1
 ## Installation
 
 ```
-  $ yarn install grommet-theme-v1
+  $ yarn add grommet-theme-v1
 ```
 
 ## Usage
