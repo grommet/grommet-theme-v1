@@ -1,6 +1,5 @@
 // (C) Copyright 2017-2018 Hewlett Packard Enterprise Development LP
 import { css } from 'styled-components';
-import { rgba } from 'polished';
 
 const isObject = item => (
   item && typeof item === 'object' && !Array.isArray(item));
@@ -19,8 +18,10 @@ export const v1 = deepFreeze({
     colors: {
       background: '#ffffff',
       brand: '#8C50FF',
-      border: rgba(0, 0, 0, 0.15),
-      control: '#8C50FF',
+      control: {
+        dark: '#8C69FF',
+        light: '#8C50FF',
+      },
       focus: '#99d5ef',
       'neutral-1': '#5d0cfb',
       'neutral-2': '#7026ff',
@@ -58,6 +59,9 @@ export const v1 = deepFreeze({
         }
       `,
     },
+  },
+  anchor: {
+    color: 'control',
   },
   button: {
     extend: css`
