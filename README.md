@@ -16,3 +16,7 @@ import { v1 } from 'grommet-theme-v1';
 
 <Grommet theme={v1} />
 ```
+
+## Sample
+
+![Sample](./sample.png)
